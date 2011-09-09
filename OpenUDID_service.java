@@ -1,4 +1,4 @@
-package com.OpenUDID;
+package org.OpenUDID;
 
 import android.app.Service;
 import android.content.Context;
@@ -11,9 +11,9 @@ import android.os.IBinder;
 /*
  * You have to add this in your manifest
  
-<service android:name="com.OpenUDID.OpenUDID_service">
+<service android:name="org.OpenUDID.OpenUDID_service">
 	<intent-filter>
-		<action android:name="com.OpenUDID.GETUDID" />
+		<action android:name="org.OpenUDID.GETUDID" />
 	</intent-filter>
 </service>
 

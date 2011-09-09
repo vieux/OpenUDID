@@ -1,4 +1,4 @@
-package com.OpenUDID;
+package org.OpenUDID;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
@@ -162,7 +162,7 @@ public class OpenUDID_manager implements ServiceConnection{
 		if (OpenUDID == null) //Not found
 		{
 			//Get the list of all OpenUDID services available (including itself)
-			manager.mMatchingIntents = context.getPackageManager().queryIntentServices(new Intent("com.OpenUDID.GETUDID"), 0);
+			manager.mMatchingIntents = context.getPackageManager().queryIntentServices(new Intent("org.OpenUDID.GETUDID"), 0);
 			if (LOG) Log.d(TAG, manager.mMatchingIntents.size() + " services matches OpenUDID");
 			
 			if (manager.mMatchingIntents != null)
