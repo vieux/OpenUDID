@@ -1,0 +1,26 @@
+                                                                                 
+     _/_/                                  _/    _/  _/_/_/    _/_/_/  _/_/_/    
+  _/    _/  _/_/_/      _/_/    _/_/_/    _/    _/  _/    _/    _/    _/    _/   
+ _/    _/  _/    _/  _/_/_/_/  _/    _/  _/    _/  _/    _/    _/    _/    _/    
+_/    _/  _/    _/  _/        _/    _/  _/    _/  _/    _/    _/    _/    _/     
+ _/_/    _/_/_/      _/_/_/  _/    _/    _/_/    _/_/_/    _/_/_/  _/_/_/        
+        _/                                                                       
+       _/                                                                        
+
+//  Created by Victor Vieux on 9/9/11.
+//  Copyright 2011 OpenUDID.com
+//
+Synopsis: an open source project to provide a universal and persistent
+          Unique Device IDentifier (UDID) solution for Android
+
+Usage:
+* Add this to your manifest:
+<service android:name="org.openudid.OpenUDID_service">
+	 <intent-filter>
+		<action android:name="org.openudid.GETUDID" />
+	</intent-filter>
+</service>
+
+* Call `void OpenUDID_manager.sync(Context yourContext);` to initialize the OpenUDID
+* Call `boolean OpenUDID_manager.isInitialized();` to check if the initialization is over (it's asynchronous)
+* Call `String OpenUDID_manager.getOpenUDID();` to retrieve your OpenUDID
